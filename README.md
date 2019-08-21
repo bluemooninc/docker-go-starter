@@ -43,7 +43,7 @@ go     |                                     O\
 
 ``` 
 
-##2. CHeck by Curl
+## 2. Check by curl
 Call api from your local terminal.
 ```cassandraql
 $ curl http://localhost:8080/sample
