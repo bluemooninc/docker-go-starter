@@ -42,10 +42,41 @@ go     | ____________________________________O/_______
 go     |                                     O\
 
 ``` 
+## 2. Browse by phpMyAdmin
 
-## 2. Check by curl
+http://localhost:8085/
+
+You will see the test_database on your browser.
+
+Check products table in the test_database when you post the request with Json parameter below.
+
+## 3. hello world by Json post
+It just looking your json parameter about your post request.
+ 
 Call api from your local terminal.
 ```cassandraql
-$ curl http://localhost:8080/sample
-{"code":200,"text":"OK"}
+curl   -X POST   http://localhost:8080/helloWorld   -H 'Content-Type: application/json'   -d '{"code": "helloWorld", "price": 999}'
+
+{"code":"helloWorld","price":999}
+```
+
+## 4. Insert data by Json post
+```cassandraql
+curl   -X POST   http://localhost:8080/insert   -H 'Content-Type: application/json'   -d '{"code": "foo","price": 555}'
+
+{"code":200,"body":"foo"}
+```
+
+## 5. Find data by Json Post
+```cassandraql
+curl   -X POST   http://localhost:8080/find   -H 'Content-Type: application/json'   -d '{"code": "foo"}'
+
+{"code":200,"body":"555"}
+```
+
+## 6. Delete data by Json Post
+```cassandraql
+curl   -X POST   http://localhost:8080/delete   -H 'Content-Type: application/json'   -d '{"code": "foo"}'
+
+{"code":200,"body":"foo"}
 ```

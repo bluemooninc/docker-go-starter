@@ -70,4 +70,4 @@ ENV GO111MODULE="on"
 
 ## get hot reload module
 RUN go get github.com/pilu/fresh
-CMD ["fresh"]
+CMD fresh main.go
