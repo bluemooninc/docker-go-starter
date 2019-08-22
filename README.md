@@ -8,8 +8,6 @@ It contain about Go v1.13 with Echo web flame-work and Gorm OR-Mapper with MySQL
 
 You can edit go file which is automatically hot reload by fresh module.
 
-Sample main.go is simple api just response json data. 
-
 if you want to more variety for Dockerfile visit below.
 
 https://github.com/docker-library/golang
