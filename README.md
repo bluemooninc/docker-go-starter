@@ -11,7 +11,7 @@ if you want to more variety for Dockerfile visit below.
 https://github.com/docker-library/golang
 
 ## 1. Starting docker
-Docke compose up and start API server. The sample endpoint is http://localhost:8080/sample
+Docke compose up and start API server. The sample endpoint is http://localhost:8080/helloWorld
 When you edit the main.go, it will chang by fresh module has hot reload automatically.
 ```cassandraql
 docker-compose up
