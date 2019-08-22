@@ -2,6 +2,8 @@
 
 You can quick start for GO language development with docker.
 
+This is a sample program that has a JSON-format API interface and inserts, updates, and deletes to the MySQL server using the OR mapper.
+
 It contain about Go v1.13 with Echo web flame-work and Gorm OR-Mapper with MySQL database.
 
 You can edit go file which is automatically hot reload by fresh module.
